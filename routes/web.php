@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.app');
 });
+
+Route::get('/posts/{post}', 'PostController@show');
+
+Auth::routes();
