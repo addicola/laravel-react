@@ -86,7 +86,7 @@
 /******/ 		if (__webpack_require__.nc) {
 /******/ 			script.setAttribute("nonce", __webpack_require__.nc);
 /******/ 		}
-/******/ 		script.src = __webpack_require__.p + "js/chuck/" + ({"0":"homePageChunk","1":"postDetailPageChunk","2":"loginPageChunk","3":"appChunk"}[chunkId]||chunkId) + "." + {"0":"133c7b491e2f0ff481e4","1":"f50bec3439a5e6a69497","2":"61a6109c2e7cd3ddeaf1","3":"7299094364e8710096c5"}[chunkId] + ".js";
+/******/ 		script.src = __webpack_require__.p + "js/chuck/" + ({"0":"homePageChunk","1":"postDetailPageChunk","2":"loginPageChunk","3":"appChunk"}[chunkId]||chunkId) + "." + {"0":"27544b749433d2e8bfe1","1":"d3bf049bb0adfb063acb","2":"61a6109c2e7cd3ddeaf1","3":"7299094364e8710096c5"}[chunkId] + ".js";
 /******/ 		var timeout = setTimeout(onScriptComplete, 120000);
 /******/ 		script.onerror = script.onload = onScriptComplete;
 /******/ 		function onScriptComplete() {
@@ -13378,7 +13378,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1_react_dom__["render"])(__WEBPACK_IMPORTED_MOD
             }
         }),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_react_router__["Route"], {
-            path: '/posts/1',
+            path: '/posts/:id',
             getComponent: function getComponent(location, cb) {
                 __webpack_require__.e/* require.ensure */(1).then((function (require) {
                     cb(null, __webpack_require__(284).default);

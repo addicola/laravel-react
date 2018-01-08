@@ -52,7 +52,14 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        return view('layouts.app')->with(compact('post'));
+        if(request()->ajax())
+        {
+            $post->load('user');
+            return  response()->json(
+                compact('post')
+            );
+        }
+        return view('layouts.app');
     }
 
     /**

@@ -45,7 +45,7 @@ render(
                         }}
                     />
                     <Route
-                        path="/posts/1"
+                        path="/posts/:id"
                         getComponent={(location, cb) => {
                             require.ensure(
                                 [],

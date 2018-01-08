@@ -7,12 +7,12 @@ class HomePage extends Component {
 
     constructor() {
         super();
-        this.state = { posts: '' };
+        this.state = { 
+            posts: '' 
+        };
     }
 
-    tabPosts(){
-
-        
+    tabPosts() {
         if(this.state.posts instanceof Array){
             return this.state.posts.map(function(object, i){
                 return <Post post={object} key={i} />;

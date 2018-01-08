@@ -11,5 +11,4 @@ npm-debug.log
 yarn-error.log
 .env
 .DS_Store
-public/js/*Chunk-*js
-public/js/*Chunk.*js
+public/js/chuck/*Chunk.*js
