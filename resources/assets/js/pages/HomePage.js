@@ -21,7 +21,7 @@ class HomePage extends Component {
     }
 
     componentDidMount() {
-        axios.get('/api/posts')
+        axios.get('/api/v1/posts')
         .then(response => {
             this.setState({ posts: response.data });
         })

@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api\v1;
 
 use Illuminate\Http\Request;
 use App\Post;
+use App\Http\Controllers\Controller;
 
-class PostController extends Controller
+class PostApiController extends Controller
 {
 
-    
     /**
      * Display a listing of the resource.
      *
@@ -16,17 +16,15 @@ class PostController extends Controller
      */
     public function index()
     {
-        
         $posts = Post::latest()->get();
 
-    
         return response()->json($posts);
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response 
      */
     public function create()
     {
@@ -55,9 +53,7 @@ class PostController extends Controller
         if(request()->ajax())
         {
             $post->load('user');
-            return  response()->json(
-                compact('post')
-            );
+            return  response()->json(compact('post'));
         }
         return view('layouts.app');
     }
