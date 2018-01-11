@@ -8,21 +8,15 @@ export default class Post extends Component {
 
     render() {
         return (
-            <div className="container" onClick={this.handleShowDetail.bind(this, 1)}>
-                <div className="row">
-                    <div className="col-md-8 col-md-offset-2">
-                        <div className="panel panel-default">
-                            <div className="panel-heading">
-                                <div className="row">
-                                    <div className="col-md-6 text-left">{ this.props.post.title }</div>
-                                    <div className="col-md-6 text-right">{ this.props.post.created_at }</div>
-                                </div>
-                            </div>
+            <div className="panel panel-default" onClick={this.handleShowDetail.bind(this, this.props.post.id)}>
+                
 
-                            <div className="panel-body">
-                                { this.props.post.body }
-
-                            </div>
+                <div className="panel-body">
+                    <div><img src={'http://placehold.it/720x360&text=Example'} alt="img" className="img-responsive"/></div>
+                    <div className="row">
+                        <div className="col-md-3">
+                            <div className="text-center">JAN</div>
+                            <div className="text-center">13</div>
                         </div>
                     </div>
                 </div>

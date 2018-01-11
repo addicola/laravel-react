@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import CreatePost from '../components/CreatePost';
-import Post from '../components/Post';
+import PostRow from '../components/PostRow';
 
 class HomePage extends Component {
 
@@ -12,12 +12,30 @@ class HomePage extends Component {
         };
     }
 
-    tabPosts() {
+    tabPostRows() {
         if(this.state.posts instanceof Array){
-            return this.state.posts.map(function(object, i){
-                return <Post post={object} key={i} />;
+
+            var matrix = this.convertListToMartix(this.state.posts, 3);
+
+            return matrix.map(function(object, i){
+                return <PostRow posts={object} key={'post-row' + i} />;
             })
         }
+    }
+
+    convertListToMartix(list, elementsPerSubArray) {
+        var matrix = [], i, k;
+
+        for (i = 0, k = -1; i < list.length; i++) {
+            if (i % elementsPerSubArray === 0) {
+                k++;
+                matrix[k] = [];
+            }
+
+            matrix[k].push(list[i]);
+        }
+
+        return matrix;
     }
 
     componentDidMount() {
@@ -33,7 +51,7 @@ class HomePage extends Component {
     render() {
         return (
             <div>
-                {this.tabPosts()}
+                {this.tabPostRows()}
             </div>
         );
     }
