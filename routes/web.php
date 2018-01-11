@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('layouts.app');
 });
 
-Route::get('/posts/{post}', 'PostController@show');
+
+Route::get('/posts/{id}', 'HomeController@index')->middleware('auth');
 
 Auth::routes();

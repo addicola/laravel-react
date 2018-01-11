@@ -3,6 +3,7 @@ import axios from 'axios';
 import CreatePost from '../components/CreatePost';
 import PostRow from '../components/PostRow';
 
+
 class HomePage extends Component {
 
     constructor() {
@@ -50,7 +51,7 @@ class HomePage extends Component {
 
     render() {
         return (
-            <div>
+            <div className='container'>
                 {this.tabPostRows()}
             </div>
         );

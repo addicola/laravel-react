@@ -75,6 +75,7 @@
     </div>
 
     <div id="app-container"></div>
+    
 
     <!-- Scripts -->
     <script src="{{ asset('/js/app.js') }}"></script>
