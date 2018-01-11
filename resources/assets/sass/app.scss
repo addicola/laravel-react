@@ -7,3 +7,30 @@
 
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
+
+.post-block {
+    background: white;
+}
+
+.post-date {
+    padding: 16px 0px;
+}
+
+.post-date-day {
+    color: coral;
+    font-size: 12px;
+}
+
+.post-detail {
+    padding: 16px 0px;
+}
+
+.post-detail-title {
+    color: black;  
+    font-size: 16px;  
+}
+
+.post-detail-body { 
+    font-size: 12px;  
+}
+
