@@ -57,10 +57,12 @@ export default class PostDetailPage extends Component {
                     <div className="col-md-8 col-md-offset-2">
                         <div className="post-detail-block-create">
                             <div className="row">   
-                                <div className="col-md-2">     
-                                    <div className="user-avatar" ><img src="http://i.pravatar.cc/35" className="img-circle" alt="Avatar" /></div>
-                                    <div className="clearfix user-detail">
-                                        fdsfdsf
+                                <div className="col-md-12">     
+                                    <div className="user-avatar" ><img src="http://i.pravatar.cc/30" className="img-circle" alt="Avatar" /></div>
+                                    <div className="clearfix parent-element">
+                                        <div className="user-detail element">
+                                            <input placeholder="Write comment" type="text"/>
+                                        </div>
                                     </div>
                                 </div>      
                             </div>
