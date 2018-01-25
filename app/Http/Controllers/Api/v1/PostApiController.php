@@ -5,13 +5,15 @@ use Illuminate\Http\Request;
 use App\Post;
 use App\Http\Controllers\Controller;
 
-class PostApiController extends Controller {
+class PostApiController extends Controller
+{
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index() {
+    public function index()
+    {
         $posts = Post::latest()->get();
 
         return response()->json($posts);
@@ -20,7 +22,7 @@ class PostApiController extends Controller {
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response 
+     * @return \Illuminate\Http\Response
      */
     public function create()
     {
