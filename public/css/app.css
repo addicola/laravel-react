@@ -8495,3 +8495,23 @@ div.floating {
   font-size: 12px;
 }
 
+.post-block a:link {
+  /* Applies to unvisited links in class mainNav */
+  text-decoration: none;
+}
+
+.post-block a:visited {
+  /* Applies to visited links in class mainNav */
+  text-decoration: none;
+}
+
+.post-block a:hover {
+  /* Applies to links under the pointer in class mainNav */
+  text-decoration: none;
+}
+
+.post-block a:active {
+  /* Applies to activated links in class mainNav */
+  text-decoration: none;
+}
+

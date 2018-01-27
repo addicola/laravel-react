@@ -101,7 +101,6 @@ export default class PostDetailPage extends Component {
             <div className="container-fluid">
                 { this.renderPost() }
                 <div className="hr-custom-no-border" />
-                { this.renderCreate() }
             </div>
         );
     }
