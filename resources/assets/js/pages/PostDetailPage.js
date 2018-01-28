@@ -25,10 +25,10 @@ export default class PostDetailPage extends Component {
             return (
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-8 col-md-offset-2">
+                        <div className="col-md-12">
                             <div className="post-detail-block">
                                 <div className="row"> 
-                                    <div className="col-md-8"><img src={'http://placehold.it/800x400'} alt="img" className="img-responsive"/></div>
+                                    <div className="col-md-8"><img src={'http://lorempixel.com/720/360'} alt="img" className="img-responsive"/></div>
                                     <div className="col-md-4">
                                         <div className="post-header-date">
                                             <div className="post-header-month">JAN</div>
@@ -39,8 +39,8 @@ export default class PostDetailPage extends Component {
                                 </div>
                                 <div className="hr-custom" />
                                 <div className="row post-body-description">   
-                                    <div className="col-md-12 post-detail-description">DESCRIPTION</div>   
-                                    <div className="col-md-12">{ this.state.post.body }</div>   
+                                    <p><div className="col-md-12 post-detail-description">DESCRIPTION</div></p>
+                                    <p><div className="col-md-12">{ this.state.post.body }</div></p>
                                 </div>
                             </div>
                         </div>
