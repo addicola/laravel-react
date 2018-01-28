@@ -27,7 +27,7 @@ export default class Post extends Component {
             <div className="panel panel-default post-block">
                 <a href={"/posts/" + this.props.post.id}>
                     <div className="row">
-                        <div className="col-md-12"><img src={'http://lorempixel.com/720/360'} alt="img" className="img-responsive"/></div>
+                        <div className="col-md-12"><img src={'http://via.placeholder.com/720x360'} alt="img" className="img-responsive"/></div>
                         
                         <div className="col-md-12">
                             <div className="col-md-3 col-xs-3">

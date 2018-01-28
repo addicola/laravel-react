@@ -47,6 +47,18 @@ render(
                                 }}
                             />
                             <Route
+                                path="/posts/share"
+                                getComponent={(location, cb) => {
+                                    require.ensure(
+                                        [],
+                                        require => {
+                                            cb(null, require('./pages/CreatePostPage').default);
+                                        },
+                                        'createPostPageChunk'
+                                    );
+                                }}
+                            />
+                            <Route
                                 path="/posts/:id"
                                 getComponent={(location, cb) => {
                                     require.ensure(

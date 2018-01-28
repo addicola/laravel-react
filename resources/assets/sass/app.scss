@@ -178,3 +178,22 @@ div.floating {
     // background-color: black;
     // color: white;
 } 
+
+.post-editor {
+    border: 0;
+}
+
+.post-editor:focus {
+    outline-width: 0;
+}
+
+textarea { 
+    resize: both; 
+}
+
+textarea.vert { 
+    resize: vertical; 
+}
+textarea.noResize { 
+    resize: none; 
+}

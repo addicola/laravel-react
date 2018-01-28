@@ -13,9 +13,20 @@
 
 Route::get('/', function () {
     return view('layouts.app');
+})->name('home');
+
+
+Route::group(['middleware' => ['auth']], function () {
+    
+    // User Route
+    Route::get('/profile', 'HomeController@index')->name('profile');
+
+    // Post Route
+    Route::get('/posts/share', 'HomeController@index')->name('create-post');
+    
+    Route::get('/posts/{id}', 'HomeController@index');
+
 });
 
-
-Route::get('/posts/{id}', 'HomeController@index')->middleware('auth');
 
 Auth::routes();

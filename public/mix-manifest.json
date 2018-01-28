@@ -1,12 +1,14 @@
 {
-    "/js/chuck/homePageChunk.b90265a86d34aa84f0bd.js": "/js/chuck/homePageChunk.b90265a86d34aa84f0bd.js",
-    "/js/chuck/postDetailPageChunk.1dac69b96a7ac73d8bd9.js": "/js/chuck/postDetailPageChunk.1dac69b96a7ac73d8bd9.js",
-    "/js/chuck/loginPageChunk.9f2e5d5ffa3f01e310c3.js": "/js/chuck/loginPageChunk.9f2e5d5ffa3f01e310c3.js",
-    "/js/chuck/appChunk.b29b2c2853f86bfe074c.js": "/js/chuck/appChunk.b29b2c2853f86bfe074c.js",
+    "/js/chuck/createPostPageChunk.b50a88844313567a0e6d.js": "/js/chuck/createPostPageChunk.b50a88844313567a0e6d.js",
+    "/js/chuck/homePageChunk.99f29943cf93b071837b.js": "/js/chuck/homePageChunk.99f29943cf93b071837b.js",
+    "/js/chuck/postDetailPageChunk.f170e208eef85c4097ee.js": "/js/chuck/postDetailPageChunk.f170e208eef85c4097ee.js",
+    "/js/chuck/loginPageChunk.a9b1b94a218d62facd01.js": "/js/chuck/loginPageChunk.a9b1b94a218d62facd01.js",
+    "/js/chuck/appChunk.0947ac72eaccc2f865ae.js": "/js/chuck/appChunk.0947ac72eaccc2f865ae.js",
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/js/chuck/postDetailPageChunk.3ec491da582e723e52d9.js": "/js/chuck/postDetailPageChunk.3ec491da582e723e52d9.js",
-    "/js/chuck/postDetailPageChunk.47aa08ea93f8ef486f85.js": "/js/chuck/postDetailPageChunk.47aa08ea93f8ef486f85.js",
-    "/js/chuck/postDetailPageChunk.f717a80bfa7fc3a7bc6d.js": "/js/chuck/postDetailPageChunk.f717a80bfa7fc3a7bc6d.js",
-    "/js/chuck/postDetailPageChunk.dd2b3b851f5dc5fd555a.js": "/js/chuck/postDetailPageChunk.dd2b3b851f5dc5fd555a.js"
+    "/js/chuck/createPostPageChunk.aa3ccfa5106adfc1f14d.js": "/js/chuck/createPostPageChunk.aa3ccfa5106adfc1f14d.js",
+    "/js/chuck/createPostPageChunk.749f31670eda87faf614.js": "/js/chuck/createPostPageChunk.749f31670eda87faf614.js",
+    "/js/chuck/createPostPageChunk.90d5d01fed5af703d932.js": "/js/chuck/createPostPageChunk.90d5d01fed5af703d932.js",
+    "/js/chuck/createPostPageChunk.d7b42d84635b79a2e288.js": "/js/chuck/createPostPageChunk.d7b42d84635b79a2e288.js",
+    "/js/chuck/createPostPageChunk.6454dd23b88c0ade5e58.js": "/js/chuck/createPostPageChunk.6454dd23b88c0ade5e58.js"
 }
