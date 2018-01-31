@@ -4,8 +4,14 @@ import React from 'react';
 import { render } from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import todoApp from './reducers'
+
+let store = createStore(todoApp)
 
 render(
+    <Provider store={store}>
     <MuiThemeProvider>
         <Router history={browserHistory}>
             <Route
@@ -73,5 +79,6 @@ render(
             </Route>
         </Router>
     </MuiThemeProvider>
+    </Provider>
     ,
         document.getElementById('app-container'));
