@@ -72,5 +72,6 @@ render(
                             />
             </Route>
         </Router>
-    </MuiThemeProvider>,
+    </MuiThemeProvider>
+    ,
         document.getElementById('app-container'));
