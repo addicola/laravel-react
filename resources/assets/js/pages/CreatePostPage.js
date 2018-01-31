@@ -8,7 +8,7 @@ export default class CreatePostPage extends Component {
     }
 
     componentDidMount() {
-        
+
     }
 
     render() {
@@ -18,15 +18,15 @@ export default class CreatePostPage extends Component {
                     <div className="row">
                         <div className="col-md-12">
                             <div className="post-detail-block-create">
-                                <div className="row">   
-                                    <div className="col-md-12">     
-                                        <input type="text" className="post-editor" placeholder="Title" autoComplete="off" id="title"/>
-                                    </div>      
+                                <div className="row">
+                                    <div className="col-md-12">
+                                        <input type="text" className="post-editor" placeholder="Title" autoComplete="off" id="title" />
+                                    </div>
                                 </div>
-                                <hr/>
-                                <div className="row">   
-                                    <div className="col-md-12"> 
-                                    </div>      
+                                <hr />
+                                <div className="row">
+                                    <div className="col-md-12">
+                                    </div>
                                 </div>
                             </div>
                         </div>
