@@ -33,7 +33,7 @@ export default class Post extends Component {
                             <div className="col-md-3 col-xs-3">
                                 <div className="post-date">
                                     <div className="post-date-day text-center">{ this.getMonthShortName(this.getDateFromDateFormat(this.props.post.created_at).getMonth()) }</div>
-                                    <div className="text-center">{ this.getDateFromDateFormat(this.props.post.created_at).getDate() }</div>
+                                    <div className="post-date-number text-center">{ this.getDateFromDateFormat(this.props.post.created_at).getDate() }</div>
                                 </div>
                             
                             </div>

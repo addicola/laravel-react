@@ -8390,7 +8390,12 @@ div.floating {
 
 .post-date-day {
   color: coral;
-  font-size: 12px;
+  font-size: 16px;
+}
+
+.post-date-number {
+  color: black;
+  font-size: 16px;
 }
 
 .post-detail {
@@ -8399,6 +8404,7 @@ div.floating {
 
 .post-detail-title {
   color: black;
+  font-weight: bold;
   font-size: 16px;
 }
 
@@ -8495,22 +8501,23 @@ div.floating {
   font-size: 12px;
 }
 
-.post-block a:link {
+a:link {
   /* Applies to unvisited links in class mainNav */
   text-decoration: none;
+  color: black;
 }
 
-.post-block a:visited {
+a:visited {
   /* Applies to visited links in class mainNav */
   text-decoration: none;
 }
 
-.post-block a:hover {
+a:hover {
   /* Applies to links under the pointer in class mainNav */
   text-decoration: none;
 }
 
-.post-block a:active {
+a:active {
   /* Applies to activated links in class mainNav */
   text-decoration: none;
 }
