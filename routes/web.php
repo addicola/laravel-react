@@ -26,6 +26,9 @@ Route::group(['middleware' => ['auth']], function () {
     
     Route::get('/posts/{id}', 'HomeController@index');
 
+    // Task Route
+    Route::get('/posts/tasks', 'HomeController@index')->name('todos-list');
+
 });
 
 

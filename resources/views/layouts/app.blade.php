@@ -37,7 +37,8 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         &nbsp;
-                        <li><a href="{{ route('create-post') }}">Share story</a></li>
+                        <!-- <li><a href="{{ route('create-post') }}">Share story</a></li> -->
+                        <li><a href="{{ route('todos-list') }}">Todos</a></li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
