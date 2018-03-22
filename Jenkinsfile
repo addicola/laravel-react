@@ -2,10 +2,14 @@ pipeline {
     agent any
 
     stages {
+        agent {
+            docker { image 'composer/composer' }
+        }
         stage ('Building Stage') {
 
             steps {
                 echo 'Building'
+                composer install
             }
         }
 
