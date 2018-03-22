@@ -1,10 +1,10 @@
 pipeline {
-    agent any
-
+    agent {
+        docker { image 'composer/composer' }
+    }
+    
     stages {
-        agent {
-            docker { image 'composer/composer' }
-        }
+        
         stage ('Building Stage') {
 
             steps {
