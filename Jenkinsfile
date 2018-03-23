@@ -1,9 +1,5 @@
 pipeline {
-    
-    node {
-        label 'php-slave'
-    }
-    
+
     stages {
         
         stage ('Building Stage') {
