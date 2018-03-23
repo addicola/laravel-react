@@ -1,32 +1,29 @@
-node('php-slave') {
-    pipeline {
-        agent {
-            docker { image 'composer/composer' }
-        }
+
+pipeline {
+    node('php-slave') {
         
-        stages {
-            
-            stage ('Building Stage') {
+        stage ('Building Stage') {
 
-                steps {
-                    echo 'Building'
-                    composer install
-                }
-            }
-
-            stage ('Testing Stage') {
-
-                steps {
-                    echo 'Testing'
-                }
-            }
-
-
-            stage ('Deployment Stage') {
-                steps {
-                    echo 'Deploying'
-                }
+            steps {
+                echo 'Building'
+                composer install
             }
         }
+
+        stage ('Testing Stage') {
+
+            steps {
+                echo 'Testing'
+            }
+        }
+
+
+        stage ('Deployment Stage') {
+            steps {
+                echo 'Deploying'
+            }
+        }
+
     }
+    
 }
