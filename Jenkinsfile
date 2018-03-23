@@ -1,6 +1,10 @@
-
 pipeline {
-    node('php-slave') {
+    
+    node {
+        label 'php-slave'
+    }
+    
+    stages {
         
         stage ('Building Stage') {
 
@@ -23,7 +27,5 @@ pipeline {
                 echo 'Deploying'
             }
         }
-
     }
-    
 }
