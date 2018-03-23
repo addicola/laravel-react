@@ -1,4 +1,9 @@
 pipeline {
+    agent {
+        node {
+            label 'php-slave'
+        }
+    }
 
     stages {
         
